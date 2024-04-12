@@ -1,4 +1,5 @@
 # ${data.title}
+${licenseBadge}${licenseLink}
 
 ## Description
 ${data.description}
@@ -21,7 +22,7 @@ ${data.installation}
 ${data.usage}
 
 ## License
-${data.license}
+${licenseSection}
 
 ## How to Contribute <a id="contribute"></a>
 ${contribution}
