@@ -39,7 +39,25 @@ const questions = [
 		type: 'list',
 		message: 'Which License will you be using?',
 		name: 'license',
-		choices: []
+		choices: [
+			"GNU General Public License family",
+			"MIT",
+			"Open Software License 3.0",
+			"The Unlicense",
+			"ISC",
+			"Do What The F*ck You Want To Public License",
+			"Creative Commons license family"
+		],
+	},
+	{
+		type: 'input',
+		message: 'What is your GitHub Username?',
+		name: 'github',
+	},
+	{
+		type: 'input',
+		message: 'What is your Email Address?',
+		name: 'email',
 	},
 ];
 
