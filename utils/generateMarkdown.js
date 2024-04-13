@@ -7,8 +7,8 @@ function renderLicenseBadge(license) {
 
 	// switch-case for selected license
 	switch (license) {
-		case 'GNU General Public License family':
-			return '[![License: GPL](https://shields.io/badge/License-GPL-blue.svg)]';
+		case 'GNU General Public License v3.0':
+			return '[![License: GPL](https://shields.io/badge/License-GPLv3-blue.svg)]';
 		case 'MIT':
 			return '[![License: MIT](https://shields.io/badge/License-MIT-yellow.svg)]';
 		case 'Open Software License 3.0':
@@ -19,6 +19,8 @@ function renderLicenseBadge(license) {
 			return '[![License: ISC](https://shields.io/badge/License-ISC-blue.svg)]';
 		case 'Do What The F*ck You Want To Public License':
 			return '[![License: WTFPL](https://shields.io/badge/License-WTFPL-brightgreen.svg)]';
+		case '':
+			return '';
 		default:
 			console.log('Error: Invalid license');
 	}
@@ -26,7 +28,28 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) { }
+function renderLicenseLink(license) {
+
+	// switch-case for selected license
+	switch (license) {
+		case 'GNU General Public License v3.0':
+			return '(https://www.gnu.org/licenses/gpl-3.0)';
+		case 'MIT':
+			return '(https://opensource.org/licenses/MIT)';
+		case 'Open Software License 3.0':
+			return '(https://opensource.org/license/osl-3-0-php)';
+		case 'The Unlicense':
+			return '(http://unlicense.org/)';
+		case 'ISC':
+			return '(https://opensource.org/licenses/ISC)';
+		case 'Do What The F*ck You Want To Public License':
+			return '(http://www.wtfpl.net/about/)';
+		case '':
+			return '';
+		default:
+			console.log('Error: Invalid license');
+	}
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string

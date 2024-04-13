@@ -40,7 +40,7 @@ const questions = [
 		message: 'Which License will you be using?',
 		name: 'license',
 		choices: [
-			"GNU General Public License family",
+			"GNU General Public License v3.0",
 			"MIT",
 			"Open Software License 3.0",
 			"The Unlicense",
