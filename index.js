@@ -45,8 +45,7 @@ const questions = [
 			"Open Software License 3.0",
 			"The Unlicense",
 			"ISC",
-			"Do What The F*ck You Want To Public License",
-			"Creative Commons license family"
+			"Do What The F*ck You Want To Public License"
 		],
 	},
 	{
