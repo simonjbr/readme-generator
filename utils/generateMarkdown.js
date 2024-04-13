@@ -43,7 +43,7 @@ function renderLicenseLink(license) {
 		case 'ISC':
 			return '(https://opensource.org/licenses/ISC)';
 		case 'Do What The F*ck You Want To Public License':
-			return '(http://www.wtfpl.net/about/)';
+			return '(https://spdx.org/licenses/WTFPL.html)';
 		case '':
 			return '';
 		default:
@@ -53,7 +53,10 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) { }
+function renderLicenseSection(license) {
+
+	return `is licensed under the terms of the following license: ${license}.`
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -90,7 +93,7 @@ ${data.installation}
 ${data.usage}
 
 ## License
-${licenseSection}
+${data.title} ${licenseSection}
 
 ## How to Contribute <a id="contribute"></a>
 ${data.contribution}
