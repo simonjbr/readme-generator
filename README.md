@@ -35,7 +35,10 @@ The user will then be prompted to enter the following information:
 Following this, the data will be injected in to a template and written to the file `/output/README.md`.
 
 Find the video walkthrough here:
-[Video Walkthrough]()
+[Video Walkthrough](https://watch.screencastify.com/v/fC36BFpsymA4KVPJWFpS)
+
+Find the generated sample README.md here:
+[Sample README.md](./output/README.md)
 
 ## Credits
 
