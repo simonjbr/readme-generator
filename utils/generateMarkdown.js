@@ -70,8 +70,7 @@ function generateMarkdown(data) {
 	// create license section
 	const licenseSection = renderLicenseSection(data.license);
 
-	return `
-# ${data.title}
+	return `# ${data.title}
 ${licenseBadge}${licenseLink}
 
 ## Description

@@ -20,7 +20,7 @@ ${data.installation}
 ${data.usage}
 
 ## License
-${licenseSection}
+${data.title} ${licenseSection}
 
 ## How to Contribute <a id="contribute"></a>
 ${data.contribution}
